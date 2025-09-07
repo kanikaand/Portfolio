@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 150px;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 30px;
+}
+
+nav div a {
+    margin-left: 50px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.bodycontent {
+    width: 50%;
+}
+
+.bodycontent h4 {
+    color: rgb(255, 187, 0);
+    text-transform: uppercase;
+}
+
+.bodycontent h1 {
+    font-size: 70px;
+}
+
+.bodycontent p {
+    width: 70%;
+}
+
+.bodycontent div {
+    margin-top: 10px;
+}
+
+.bodycontent div .firstbtn {
+    background-color: rgb(255, 187, 0);
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.bodycontent div .secondbtn {
+    padding: 5px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+
+.imagecontent {
+    width: 50%;
+}
+
+.imagecontent img {
+    width: 90%;
+}
+
+
+.projectContainer {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.projectHeader {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectHeader h1 {
+    font-size: 45px;
+}
+
+.projectHeader hr {
+    width: 100px;
+    height: 2px;
+    background-color: rgb(255, 187, 0);
+    border: none;
+    border-radius: 10px;
+}
+
+.projectCards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    gap: 40px;
+}
+
+.cardContainer {
+    width: 100%;
+    background-color: rgb(239, 158, 158);
+    display: flex;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 900px;
+    gap: 30px; 
+}
+
+
+.cardContainer.reverse {
+    flex-direction: row-reverse;
+}
+
+.cardContent {
+    
+    width: calc(50% - 15px); 
+}
+
+.cardContent h1 {
+    font-size: 30px;
+}
+
+.cardContent p {
+    width: 80%;
+    margin: 15px 0;
+}
+
+.cardContent button {
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.cardImage {
+    width: calc(50% - 15px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.click:hover{
+   cursor: pointer;
+   background-color: black;
+   color: white;
+}
+
+.cardContainer.reverse .cardImage img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Social media icons style */
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0 10px 0;
+}
+
+.socialContainer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
